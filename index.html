@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Books</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+
+            <label for="menu" class="container__rotulo">
+                <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+            </label>
+
+
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+
+                <li class="lista-menu__item">
+                    <a href="https://youtu.be/dQw4w9WgXcQ" class="lista-menu__link">Programação</a>
+                </li>
+
+                <li class="lista-menu__item">
+                    <a href="https://youtu.be/dQw4w9WgXcQ" class="lista-menu__link">Front-end</a>
+                </li>
+
+                <li class="lista-menu__item">
+                    <a href="https://youtu.be/dQw4w9WgXcQ" class="lista-menu__link">Infraestrutura</a>
+                </li>
+
+                <li class="lista-menu__item">
+                    <a href="https://youtu.be/dQw4w9WgXcQ" class="lista-menu__link">Business</a>
+                </li>
+
+                <li class="lista-menu__item">
+                    <a href="https://youtu.be/dQw4w9WgXcQ" class="lista-menu__link">Design & UX</a>
+                </li>
+            </ul>
+
+
+            <img src="Img/Logo.svg" alt="Logo da AluraBooks" class="container__imagens">
+            <h1 class="container__titulo"><b class="container__titulo-negrito">Alura</b>Books</h1>
+        
+        </div>
+
+        <ul class="opções">
+            <input type="checkbox" id="opções-menu" class="opções__botão">
+            <label for="opções-menu" class="opções__rotulo">
+                <li class="opções__item">Categorias</li>
+            </label>
+
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a href="https://youtu.be/dQw4w9WgXcQ" class="lista-menu__link">Programação</a>
+                </li>
+
+                <li class="lista-menu__item">
+                    <a href="https://youtu.be/dQw4w9WgXcQ" class="lista-menu__link">Front-end</a>
+                </li>
+
+                <li class="lista-menu__item">
+                    <a href="https://youtu.be/dQw4w9WgXcQ" class="lista-menu__link">Infraestrutura</a>
+                </li>
+
+                <li class="lista-menu__item">
+                    <a href="https://youtu.be/dQw4w9WgXcQ" class="lista-menu__link">Business</a>
+                </li>
+
+                <li class="lista-menu__item">
+                    <a href="https://youtu.be/dQw4w9WgXcQ" class="lista-menu__link">Design & UX</a>
+                </li>
+            </ul>
+
+
+            <li class="opções__item"><a href="https://youtu.be/dQw4w9WgXcQ"class="opções__link">Favoritos</a></li>
+            <li class="opções__item"><a href="https://youtu.be/dQw4w9WgXcQ" class="opções__link">Minha estante</a></li>
+        </ul>
+
+
+
+        <div class="container">
+            <a href="https://youtu.be/dQw4w9WgXcQ"> 
+                <img src="Img/Favoritos.svg" alt="Meus favoritos" class="container__imagens container__imagens-transparente"> 
+            </a>
+
+
+            <a href="https://youtu.be/dQw4w9WgXcQ" class="container__link"> 
+                <img src="Img/Compras.svg" alt="Carrinho de compras" class="container__imagens container__compras"> 
+                <p class="container__texto">Minha sacola</p>
+            </a>
+
+            <a href="https://youtu.be/dQw4w9WgXcQ" class="container__link"> 
+                <img src="Img/Usuario.svg" alt="Meu perfil" class="container__imagens">
+                <p class="container__texto">Meu perfil</p>
+            </a>
+        </div>
+    </header>
+
+    <section class="banner">
+        <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+        <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+        <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+    </section>
+   
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Novos lançamentos</h2>
+
+        <div class="carrossel__container">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/ApacheKafka.svg"
+                        alt="Livro sobre apache kafka e spring boot da alura books"></div>
+                <div class="swiper-slide"><img src="img/Liderança.svg"
+                        alt="Livro sobre liderança em design da alura books"></div>
+                <div class="swiper-slide"><img src="img/Javascript.svg"
+                        alt="Livro sobre javascript assertivo da alurabooks"></div>
+                <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Livro Guia front end"></div>
+                <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro sobre portugol"></div>
+                <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="livro sobre acessibilidade"></div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+
+
+        <div class="card">
+            <!--1 Coluna-->
+           <div class="card__descriçao">
+            <!--1 Linha-->
+               <div class="descriçao">
+                   <h3 class="descriçao__titulo">Talvez você também se interesse por...</h3>
+                   <h2 class="descriçao__titulo-livro">Angular 11 e Firebase</h2>
+                   <p class="decriçao__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+               </div>
+               <!--2 Linha-->
+               <img class="descriçao__imagem" src="img/Angular.svg">
+            </div>
+
+            <!--2 Coluna-->
+            <div class="card__butoes">
+                <!--1 Linha-->
+                <ul class="butoes">
+                    <il class="butoes__itens"><img src="img/Favoritos.svg"></il>
+                    <il class="butoes__itens"><img src="img/Compras.svg"></il>
+                </ul>
+                <!--2 Linha-->
+                <a class="butoes__ancora" href="https://youtu.be/dQw4w9WgXcQ">Saiba mais</a>
+            </div>
+        </div>
+    </div>
+
+
+        <section class="carrossel">
+            <h2 class="carrossel__titulo">Mais Vendidos</h2>
+
+            <div class="carrossel__container">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+    
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/mais vendidos/Construct2.svg"
+                            alt="Livro Construct2"></div>
+                    <div class="swiper-slide"><img src="img/mais vendidos/Gestão2.svg" alt="Livro sobre liderança e Gestão2"></div>
+                    <div class="swiper-slide"><img src="img/mais vendidos/MEAN.svg" alt="Livro sobre MEAN"></div>
+                    <div class="swiper-slide"><img src="img/mais vendidos/MetricasAgeis.svg" alt="Livro Métricas Ágeis"></div>
+                    <div class="swiper-slide"><img src="img/mais vendidos/Tuning.svg" alt="Livro sobre Tuning"></div>
+                    <div class="swiper-slide"><img src="img/mais vendidos/UX.svg" alt="livro sobre UX e Desing"></div>
+                </div>
+    
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+
+
+            <div class="card">
+                <!--1 Coluna-->
+               <div class="card__descriçao">
+                <!--1 Linha-->
+                   <div class="descriçao descriçao2">
+                    <img class="descriçao__imagem" src="img/Estrelas.svg">
+                       <h3 class="descriçao__titulo titulo2">Autora do Mês</h3>
+                       <h2 class="descriçao__titulo-livro autora">Juliana Agarikov</h2>
+                       <p class="decriçao__texto texto2">Analista de sistemas e escritora, Juliana é especialista em Front-End. </p>
+                   </div>
+                   <!--2 Linha-->
+                   <img class="descriçao__imagem" src="img/Escritora.svg">
+                </div>
+    
+                <!--2 Coluna-->
+                <div class="card__butoes">
+                    <!--1 Linha-->
+                    <ul class="butoes">
+                        <il class="butoes__itens"><img src="img/Favoritos.svg"></il>
+                        <il class="butoes__itens"><img src="img/Compras.svg"></il>
+                    </ul>
+                    <!--2 Linha-->
+                    <a class="butoes__ancora" href="https://youtu.be/dQw4w9WgXcQ">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <section class="topicos">
+            <h2 class="topicos__titulos">TÓPICOS VISITADOS RECENTEMENTE</h2>
+            <ul class="topicos__lista">
+                <li class="tópicos__item">
+                    <a href="https://youtu.be/dQw4w9WgXcQ" class="tópicos__link">Android</a>
+                </li>
+                <li class="tópicos__item">
+                    <a href="https://youtu.be/dQw4w9WgXcQ" class="tópicos__link">Marketing Digital</a>
+                </li>
+                <li class="tópicos__item">
+                    <a href="https://youtu.be/dQw4w9WgXcQ" class="tópicos__link">Agile</a>
+                </li>
+                <li class="tópicos__item">
+                    <a href="https://youtu.be/dQw4w9WgXcQ" class="tópicos__link">Startups</a>
+                </li>
+                <li class="tópicos__item">
+                    <a href="https://youtu.be/dQw4w9WgXcQ" class="tópicos__link">HTML e CSS</a>
+                </li>
+                <li class="tópicos__item">
+                    <a href="https://youtu.be/dQw4w9WgXcQ" class="tópicos__link">Python</a>
+                </li>
+                <li class="tópicos__item">
+                    <a href="https://youtu.be/dQw4w9WgXcQ" class="tópicos__link">OO</a>
+                </li>
+                <li class="tópicos__item">
+                    <a href="https://youtu.be/dQw4w9WgXcQ" class="tópicos__link">Java</a>
+                </li>
+            </ul>
+            
+        </section>
+
+
+
+        <section class="contato">
+            <div class="contato__descricao">
+                <h2 class="contato__titulo"><strong>Fique por dentro das novidades!</strong></h2
+             c  <p> </p>
+                <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+            </div>
+            <input type="search" class="contato__email" placeholder="Cadastre seu e-mail"></input>
+           
+        </section>
+
+        <hr/>
+
+    <footer class="rodapé">
+        <h2 class="rodapé__titulo">Grupo Alura</h2>
+
+        <ul class="rodape-lista">
+            <li class="rodape-lista__titulo">Educação</li>
+
+
+            <li class="rodape-lista__item">
+                <img src="img/rodapé/Caelum.svg" alt="logo do Caelum">
+                <a class="rodape-lista__link" href="https://youtu.be/dQw4w9WgXcQ">Caelum</a>
+            </li>
+
+            <li class="rodape-lista__item">
+                <img src="img/rodapé/CasaDoCodigo.svg" alt="logo da Casa do Código">
+                <a class="rodape-lista__link" href="https://youtu.be/dQw4w9WgXcQ">Casa do Código</a>
+            </li>
+        </ul>
+
+
+
+        <ul class="rodape-lista">
+            <li class="rodape-lista__titulo">Educação Online</li>
+            
+
+            <li class="rodape-lista__item">
+                <img src="img/rodapé/Alura.svg" alt="logo da Alura">
+                <a class="rodape-lista__link" href="https://youtu.be/dQw4w9WgXcQ">Alura</a>
+            </li>
+
+            <li class="rodape-lista__item">
+                <img src="img/rodapé/AluraEmpresas.svg" alt="logo da Alura para Empresas">
+                <a class="rodape-lista__link" href="https://youtu.be/dQw4w9WgXcQ">Alura Para Empresas</a>
+            </li>
+
+            <li class="rodape-lista__item">
+                <img src="img/rodapé/AluraLATAM.svg" alt="logo da Alura LATAM">
+                <a class="rodape-lista__link" href="https://youtu.be/dQw4w9WgXcQ">Alura LATAM</a>
+            </li>
+
+            <li class="rodape-lista__item">
+                <img src="img/rodapé/AluraStart.svg" alt="logo da Alura Start">
+                <a class="rodape-lista__link" href="https://youtu.be/dQw4w9WgXcQ">Alura Start</a>
+            </li>
+
+            <li class="rodape-lista__item">
+                <img src="img/rodapé/MusicDot.svg" alt="logo do MusicDot">
+                <a class="rodape-lista__link" href="https://youtu.be/dQw4w9WgXcQ">MusicoDot</a>
+            </li>
+
+            <li class="rodape-lista__item">
+                <img src="img/rodapé/AluraLingua.svg" alt="logo da Alura Língua">
+                <a class="rodape-lista__link" href="https://youtu.be/dQw4w9WgXcQ">Alura Língua</a>
+            </li>
+
+            <li class="rodape-lista__item">
+                <img src="img/rodapé/PM3.svg" alt="logo do PM3">
+                <a class="rodape-lista__link" href="https://youtu.be/dQw4w9WgXcQ">PM3</a>
+            </li>
+        </ul>
+
+
+
+        <ul class="rodape-lista">
+            <li class="rodape-lista__titulo">Comunidade</li>
+
+            
+            <li class="rodape-lista__item">
+                <img src="img/rodapé/HipstersTech.svg" alt="logo do Hipsters ponto Tech">
+                <a class="rodape-lista__link" href="https://youtu.be/dQw4w9WgXcQ">Hipsters ponto Tech</a>
+            </li>
+
+            <li class="rodape-lista__item">
+                <img src="img/rodapé/ScubaDev.svg" alt="logo do ScubaDev">
+                <a class="rodape-lista__link" href="https://youtu.be/dQw4w9WgXcQ">Scuba Dev</a>
+            </li>
+
+            <li class="rodape-lista__item">
+                <img src="img/rodapé/LayersTech.svg" alt="logo do Layers ponto Tech">
+                <a class="rodape-lista__link" href="https://youtu.be/dQw4w9WgXcQ">Layers ponto Tech</a>
+            </li>
+
+            <li class="rodape-lista__item">
+                <img src="img/rodapé/LikeABoss.svg" alt="logo do Like a Boss">
+                <a class="rodape-lista__link" href="https://youtu.be/dQw4w9WgXcQ">Like a Boss</a>
+            </li>
+
+            
+            <li class="rodape-lista__item">
+                <img src="img/rodapé/CarreiraSemFronteira.svg" alt="logo do Carreira sem Fronteira">
+                <a class="rodape-lista__link" href="https://youtu.be/dQw4w9WgXcQ">Carreira sem Fronteira</a>
+            </li>
+
+            <li class="rodape-lista__item">
+                <img src="img/rodapé/HipstersJobs.svg" alt="logo do Hipsters ponto Jobs">
+                <a class="rodape-lista__link" href="https://youtu.be/dQw4w9WgXcQ">Hipsters ponto Jobs</a>
+            </li>
+
+            <li class="rodape-lista__item">
+                <img src="img/rodapé/GUJ.svg" alt="logo do GUJ">
+                <a class="rodape-lista__link" href="https://youtu.be/dQw4w9WgXcQ">GUJ</a>
+            </li>
+        </ul>
+
+
+
+       
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+                spaceBetween: 10,
+                slidesPerView: 3,
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                },
+            });
+        </script>
+</body>
+
+</html>
